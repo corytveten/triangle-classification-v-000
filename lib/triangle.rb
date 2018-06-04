@@ -13,7 +13,10 @@ class Triangle
   def kind
     if side_a == side_b && side_b == side_c
       :equilateral
-    end
+    elsif side_a == side_b || side_a == side_c || side_b == side_c
+      :isosceles
+    else
+      :scalene
   end
 
 end
